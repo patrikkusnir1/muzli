@@ -20,10 +20,20 @@
 	<header class="site-header">
 		<nav class="container">
 			<ul class="menu">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="gallery.php">Gallery</a></li>
-				<li><a href="blog.php">Blog</a></li>
-				<li><a href="contact.php">Contact</a></li>
+				<?php
+
+					if ( $page_name == 'home' ) echo '<li><strong>Home</strong></li>';
+					else echo '<li><a href="index.php">Home</a></li>';
+					
+					if ( $page_name == 'gallery' ) echo '<li><strong>Gallery</strong></li>';
+					else echo '<li><a href="gallery.php">Gallery</a></li>';
+
+					if ( $page_name == 'blog' ) echo '<li><strong>Blog</strong></li>';
+					else echo '<li><a href="blog.php">Blog</a></li>';
+
+					if ( $page_name == 'contact' ) echo '<li><strong>Contact</strong></li>';
+					else echo '<li><a href="contact.php">Contact</a></li>';
+				?>
 			</ul>
 		</nav>
 	</header>
