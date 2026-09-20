@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'partials/header.php' ?>
 
 	<section class="content container">
 		<h1 class="shadow">Big words</h1>
@@ -33,6 +33,6 @@
 			<a href="#" class="btn btn-yellow load-older">Older articles</a>		
 		</div>
 	</section>
-	<?php include 'footer.php' ?>
+	<?php include 'partials/footer.php' ?>
 </body>
 </html>
